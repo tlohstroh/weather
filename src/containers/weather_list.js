@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Chart from '../components/chart';
-
+import GoogleMap from '../components/google_map';
 
 class WeathterList extends Component {
   renderWeather(cityData){
@@ -9,10 +9,16 @@ class WeathterList extends Component {
     const temps = cityData.list.map(weather => weather.main.temp - 273.15)
     const pressures = cityData.list.map(weather => weather.main.pressure)
     const humidities = cityData.list.map(weather => weather.main.humidity)
-    console.log(temps);
+    // const lon = cityData.city.coord.lon;
+    // const lat = cityData.city.coord.lat;
+    // es6: find the coord element and grab the lon and lat propperties of of it.
+    // and assign them to two new variables called lon and lat.
+    const { lon, lat } = cityData.city.coord
+    // console.log(temps);
     return(
       <tr key={name}>
-        <td>{name}</td>
+        {/* <td>{name}</td> */}
+        <td><GoogleMap lon={lon} lat={lat} st/></td>
         <td><Chart data={temps} color="orange" units="°C"/></td>
         <td><Chart data={pressures} color="green" units="hPa"/></td>
         <td><Chart data={humidities} color="grey" units="%"/></td>

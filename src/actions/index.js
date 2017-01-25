@@ -1,9 +1,5 @@
 import axios from 'axios';
-import * as config from '../../config'
-// import { API_KEY } from '../../config';
-
-
-const API_KEY = config.API_KEY;
+import { API_KEY } from '../../config';
 
 const ROOT_URL = `http://api.openweathermap.org/data/2.5/forecast?appid=${API_KEY}`;
 

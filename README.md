@@ -1,3 +1,7 @@
+![screenshot](http://res.cloudinary.com/ddpouudhk/image/upload/v1485377404/screencapture-localhost-8080-1485376903455_dshhkk.png)
+
+
+
 # ReduxSimpleStarter
 
 Interested in learning [Redux](https://www.udemy.com/react-redux/)?

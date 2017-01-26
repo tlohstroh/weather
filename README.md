@@ -12,13 +12,13 @@ boilerplate: https://github.com/StephenGrider/ReduxSimpleStarter
 
 We introduced an action creator in the form of fetchWeather. We have a constant for our action type that allows us to specify the action type in our action and in our reducer swell. It cuts down on the ability for us to make typo’s compared to using a pure string.
 
-![code-snippet](http://res.cloudinary.com/ddpouudhk/image/upload/v1485425488/Schermafbeelding_2017-01-26_om_10.17.55_jwuwgi.png)
-
 ###Middleware: redux-promise###
 
 Next interesting thing was the use of middleware, specifically redux-promise. We use redux-pormise to handle a promises that we receive, while using AXIOS to make our AJAX request. 
 This middleware is especially helpful because it automatically detects that we provide it a payload of a promise. It stops that action an then waits for the promise to resolve. Once the promise resolves it takes the data coming back from the request, sticks it on the payload property and sents the action on to all of the reducers of our application. 
 So although we wrote an AJAX request here that inherently involves asynchronous code, we don’t really have to think about the asynchronous nature of our code at all; we just write some code where an action is created, it flows to the reducers and we don’t have to worry about any promises or callbacks. So a very handy library to have around!
+
+![code-snippet](http://res.cloudinary.com/ddpouudhk/image/upload/v1485425488/Schermafbeelding_2017-01-26_om_10.17.55_jwuwgi.png)
 
 ###Reducers###
 

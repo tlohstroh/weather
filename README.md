@@ -26,7 +26,12 @@ Next we covered reducers, specifically how we always have to strive to avoid mut
 
 ![code-snippet](http://res.cloudinary.com/ddpouudhk/image/upload/v1485425485/Schermafbeelding_2017-01-26_om_10.34.14_cszkte.png)
 
-For an array we also covered the use case of destructuring an existing array. So that’s what was happening here at [ action.payload.data, ...state]; we were taking an existing array, flattening it out to create a new one.
+For an array we also covered the use case of destructuring an existing array. So that’s what was happening here at:
+
+```[ action.payload.data, ...state]
+```
+
+We were taking an existing array, flattening it out to create a new one.
 
 ###Libraries: Sparklines & Google Maps###
 
@@ -41,27 +46,13 @@ Then we also made use of the react Google Maps component which makes placing a G
 Finally we made sure to abstract both these components out ( chart.js and google_maps.js) to their own separate components, which means that if we had other areas in our application that needed a chart of a map we can reuse them in a snap.
 
 
-# ReduxSimpleStarter
 
 
-###Getting Started###
-
-There are two methods for getting started with this repo.
-
-####Familiar with Git?#####
-Checkout this repo, install dependencies, then start the gulp process with the following:
+###To start this app###
 
 ```
-	> git clone git@github.com:StephenGrider/ReduxSimpleStarter.git
-	> cd ReduxSimpleStarter
-	> npm install
-	> npm start
-```
-
-####Not Familiar with Git?#####
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
+	> git clone git@github.com:tlohstroh/weather.git
+	> cd weather
 	> npm install
 	> npm start
 ```

@@ -58,3 +58,8 @@ Finally we made sure to abstract both these components out ( chart.js and google
 	> npm install
 	> npm start
 ```
+Sign up at http://openweathermap.org to obtain your own api key and create config.js in the root directory of the app with the folowing content:
+
+```
+	> export const API_KEY = "your key"
+```

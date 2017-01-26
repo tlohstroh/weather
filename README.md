@@ -28,8 +28,10 @@ Next we covered reducers, specifically how we always have to strive to avoid mut
 
 For an array we also covered the use case of destructuring an existing array. So that’s what was happening here at:
 
-```[ action.payload.data, ...state]
 ```
+	[ action.payload.data, ...state]
+```
+
 
 We were taking an existing array, flattening it out to create a new one.
 
